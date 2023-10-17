@@ -18,16 +18,6 @@ public class TestAllClasses {
         note3.printStringRep();
 
         final SmartLamp phillips = new SmartLamp();
-        phillips.switchingOn(); //accensione lampada
-        phillips.getSwitched(); //verifica accensione
-        phillips.getIntensity(); //verifica intensità
-        phillips.setIntensity(3); //set dell'intensità
-        phillips.getIntensity(); //nuova verifica dell'intensità
-        phillips.getColor(); //verifica del colore
-        phillips.setColor("Green"); //set del colore
-        phillips.getColor(); //nuova verifica del colore
-        phillips.switchingOff(); //spegnere la lampada
-        phillips.getSwitched();
         phillips.printLampInfo();
     }
 }
