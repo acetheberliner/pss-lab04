@@ -31,7 +31,7 @@ public class SmartLamp {
         }
         else{
             if(this.intensity<=0){
-                this.intensity=0;
+                this.intensity=1;
             }
         }
     }
