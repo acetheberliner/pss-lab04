@@ -18,13 +18,16 @@ public class SmartLamp {
     //Switch on
     public void switchingOn(){
         this.switched=true;
+        this.intensity=1;
     }
 
     //Switch off
     public void switchingOff(){
         this.switched=false;
+        this.intensity=0;
     }
 
+    //Gestione intensità
     public void setIntensity(double value){
         this.intensity=value;
 
@@ -38,6 +41,7 @@ public class SmartLamp {
         }
     }
 
+    //Set del colore della lamp
     public void setColor(String hue){
         if(hue == "White" || hue == "Red" || hue == "Green" || hue == "Blue"){
             this.color=hue;
@@ -59,6 +63,19 @@ public class SmartLamp {
     //--------------------------------------------------------------------------------------------------------
 
     public void printLampInfo(){
-        System.out.println(" Lamp switched ON: " + this.getSwitched() + " | Intensity: " + this.getIntensity() + " | Color: " + this.getColor());
+        System.out.println("Accensione lampada... ");
+        System.out.println("Lampada accesa: " + this.getSwitched());
+
+        System.out.println("\n Intensita' attuale: " + this.getIntensity());
+
+        System.out.println("Nuova Verifica intensita': " + this.getIntensity());
+
+        System.out.println("\n Colore attuale: " + this.getColor());
+        this.setColor("Green");
+        System.out.println("Nuovo colore: " + this.getColor());
+
+        System.out.println("\n Spegnimento lampada...");
+        System.out.println("Lampada accesa: " + this.getSwitched());
+        
     }
 }
