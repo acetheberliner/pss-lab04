@@ -1,7 +1,8 @@
 public class SmartLamp {
-    private final int intensityLevels=3
+    private final int intensityLevels=3;
 
     private boolean switched;
+    private double intensity;
     private String color; //W R B G
     //--------------------------------------------------------------------------------------------------------
 
@@ -13,12 +14,12 @@ public class SmartLamp {
     //--------------------------------------------------------------------------------------------------------
 
     //Switch on
-    public switchingOn(){
+    public void switchingOn(){
         this.switched=true;
     }
 
     //Switch off
-    public switchingOff(){
+    public void switchingOff(){
         this.switched=false;
     }
 
@@ -42,15 +43,15 @@ public class SmartLamp {
     }
     //--------------------------------------------------------------------------------------------------------
 
-    public void getSwitched(){
+    public boolean getSwitched(){
         return this.switched;
     }
 
-    public void getIntensity(){
+    public double getIntensity(){
         return this.intensity;
     }
 
-    public void getColor(){
+    public String getColor(){
         return this.color;
     }
     //--------------------------------------------------------------------------------------------------------
