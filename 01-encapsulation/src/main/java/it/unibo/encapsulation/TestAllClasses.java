@@ -28,5 +28,6 @@ public class TestAllClasses {
         phillips.getColor(); //nuova verifica del colore
         phillips.switchingOff(); //spegnere la lampada
         phillips.getSwitched();
+        phillips.printLampInfo();
     }
 }
