@@ -56,35 +56,35 @@ public class Smartphone {
     }
     //--------------------------------------------------------------------------------------------------------
 
-    public void getCpuCount(){
+    public int getCpuCount(){
         return cpuCount;
     }
 
-    public void getRam(){
+    public int getRam(){
         return ram;
     }    
 
-    public void getSdSize(){
+    public int getSdSize(){
         return sdSize;
     }
 
-    public void getBrand(){
+    public String getBrand(){
         return brand;
     }
 
-    public void getModel(){
+    public String getModel(){
         return model;
     }
 
-    public void getHasGPS(){
+    public boolean getHasGPS(){
         return hasGPS;
     }
 
-    public void getHas3G(){
+    public boolean getHas3G(){
         return has3G;
     }
 
-    public void getHasNFC(){
+    public boolean getHasNFC(){
         return hasNFC;
     }
     //--------------------------------------------------------------------------------------------------------
