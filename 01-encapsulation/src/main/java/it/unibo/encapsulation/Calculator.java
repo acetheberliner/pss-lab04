@@ -34,11 +34,11 @@ public class Calculator {
     }   
     //--------------------------------------------------------------------------------------------------------
 
-    public void getOperationsPerformed(){
+    public int getOperationsPerformed(){
         return operationsPerformed;
     }
 
-    public void getLastResult(){
+    public double getLastResult(){
         return lastResult;
     }
     //--------------------------------------------------------------------------------------------------------
