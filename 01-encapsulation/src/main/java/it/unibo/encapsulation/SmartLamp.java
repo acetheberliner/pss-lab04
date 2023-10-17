@@ -1,3 +1,5 @@
+package it.unibo.encapsulation;
+
 public class SmartLamp {
     private final int intensityLevels=3;
 
@@ -37,9 +39,9 @@ public class SmartLamp {
     }
 
     public void setColor(String hue){
-        do{
-            this.color=hue; 
-        }while(hue!="White" || hue !="Red" || hue!="Green" || hue!="Blue");
+        if(hue == "White" || hue == "Red" || hue == "Green" || hue == "Blue"){
+            this.color=hue;
+        }
     }
     //--------------------------------------------------------------------------------------------------------
 
