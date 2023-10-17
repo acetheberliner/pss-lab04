@@ -2,9 +2,10 @@ package it.unibo.encapsulation;
 
 public class Calculator {
 
-    int operationsPerformed;
-    double lastResult;
+    private int operationsPerformed; //final previene il fatto che il metodo/parametro/classe possa essere ereditato
+    private double lastResult;
 
+    //Costruttore rimane public
     public Calculator() {
         this.operationsPerformed = 0;
         this.lastResult = 0;
@@ -30,7 +31,17 @@ public class Calculator {
 
     public double div(final double n1, final double n2) {
         return updateStatus(n1 / n2);
+    }   
+    //--------------------------------------------------------------------------------------------------------
+
+    public getOperationsPerformed(){
+        return operationsPerformed;
     }
+
+    public getLastResult(){
+        return lastResult;
+    }
+    //--------------------------------------------------------------------------------------------------------
 
     public static void printCalculatorStatus(final Calculator calc) {
         System.out.println("operations performed: " + calc.operationsPerformed);
