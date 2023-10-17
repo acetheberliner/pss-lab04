@@ -56,35 +56,35 @@ public class Smartphone {
     }
     //--------------------------------------------------------------------------------------------------------
 
-    public getCpuCount(){
+    public void getCpuCount(){
         return cpuCount;
     }
 
-    public getRam(){
+    public void getRam(){
         return ram;
     }    
 
-    public getSdSize(){
+    public void getSdSize(){
         return sdSize;
     }
 
-    public getBrand(){
+    public void getBrand(){
         return brand;
     }
 
-    public getModel(){
+    public void getModel(){
         return model;
     }
 
-    public getHasGPS(){
+    public void getHasGPS(){
         return hasGPS;
     }
 
-    public getHas3G(){
+    public void getHas3G(){
         return has3G;
     }
 
-    public getHasNFC(){
+    public void getHasNFC(){
         return hasNFC;
     }
     //--------------------------------------------------------------------------------------------------------
